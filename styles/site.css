@@ -1,0 +1,11 @@
+.primero-navbar {
+	max-height: unset;
+	min-height: 10vh;
+	height: fit-content;
+}
+
+.primero-navbar > .primero-nav > * {
+	text-align:center;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
