@@ -9,3 +9,13 @@
 	padding-left: .5rem;
 	padding-right: .5rem;
 }
+
+ul.ul {
+	list-style: none;
+}
+
+ul.ul li::marker {
+	display: block;
+	content: '\BB ';
+	font-size: larger;
+}
