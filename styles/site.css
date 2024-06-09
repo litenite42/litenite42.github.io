@@ -17,6 +17,10 @@
   padding: 1.2rem;
 }
 
+.primero-pane.double {
+  flex: 2 0 0;
+}
+
 .primero-brand span {
   font-size: larger;
   font-weight: bolder;
