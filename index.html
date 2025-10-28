@@ -1,101 +1,166 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta charset="utf-8">
-    <title>Andrew Lesh | Welcome</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/litenite42/Primero@main/docs/dist/primero.min.css">
-    <link rel="stylesheet" href="styles/site.css">
-  </head>
-  <body>
-    <nav class="primero-navbar primero-section primero-equal primero-pane">
-      <div class="primero-nav primero-brand">
-        <span>Andrew Lesh</span>
-      </div>
-      <div></div>
-      <div class="primero-nav">
-        <a id="personalGH" href="https://github.com/litenite42/">Github</a>
-        <small>litenite42</small>
-      </div>
-      <div class="primero-nav">
-        <a id="target1" href="https://litenite42.github.io/SwLeaderboard/">SW Leaderboard</a>
-      </div>
-      <div class="primero-nav">
-        <a id="target2" href="https://github.com/v-community/learn_v_in_y_minutes">Learn V In Y Minutes</a>
-      </div>
-    </nav>
-    <h1>Welcome</h1>
-    <section class="primero-section primero-sm-half primero-md-third">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1024" />
+<title>Andrew Lesh — Resume</title>
+<style>
+  :root{--accent:#0b5fff;--text:#111;--muted:#555;--max-w:1000px;--font-sans:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
+  html,body{height:100%;}
+  body{font-family:var(--font-sans);color:var(--text);margin:0;padding:18px;-webkit-print-color-adjust:exact;}
+  .page{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 320px;gap:14px;align-items:start;}
+  header{grid-column:1 / -1;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #e6e6e6;padding-bottom:6px;margin-bottom:8px;}
+  .name{font-size:18px;font-weight:700;}
+  .contact{font-size:11px;color:var(--muted);text-align:right;}
+  section{font-size:11px;line-height:1.15;}
+  h3{margin:6px 0 6px 0;color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:0.5px;}
+  .meta{font-size:10px;color:var(--muted);margin-bottom:4px;}
+  ul{margin:6px 0 8px 18px;padding:0;}
+  .role{margin-bottom:6px;}
+  .role strong{display:block;font-weight:600;}
+  .col-right{padding-left:8px;border-left:1px solid #f4f4f4;}
+  .pill{background:#f4f7ff;border-radius:4px;padding:6px;font-size:11px;color:#08306b;margin-bottom:6px;}
+  footer{grid-column:1 / -1;font-size:10px;color:var(--muted);margin-top:6px;text-align:center;}
+  @media print{
+    body{padding:8mm;}
+    .page{grid-template-columns:1fr 300px;gap:8px;}
+    @page{size:Letter portrait;margin:8mm;}
+    .pill {
+    	color: black;
+    	padding: inherit;
+    }
+  }
+  @media (max-width:900px){
+    .page{grid-template-columns:1fr;padding:8px;}
+    header{align-items:center;}
+    .contact{text-align:left;margin-top:8px;}
+    .col-right{border-left:none;padding-left:0;}
+  }
+  /* Small adjustments if content slightly overflows when printing */
+  .compact {font-size:10px;line-height:1.12;}
+</style>
+</head>
+<body>
+  <div class="page compact" role="document" aria-label="Resume Andrew Lesh">
+    <header>
       <div>
-        <div class="primero-pane" id="aboutMe">
-          <dl>
-            <dt>Occupation</dt>
-            <dd>Programming / Development Coordinator at Columbus Consolidated Government</dd>
-            <dt>OS(es)</dt>
-            <dd>Solus OS/Budgie, Nitrux OS</dd>
-            <dt>Browser</dt>
-            <dd>Firefox</dd>
-            <dt>Editor</dt>
-            <dd>Neovim</dd>
-          </dl>
-        </div>
-        <blockquote cite="https://scv.bu.edu/~aarondf/b5quotes.html">
-          <p> "In the past we had little to do with other races. Evolution teaches us that we must fight that which is different in order secure land, food, and mates for ourselves, but we must reach a point when the nobility of intellect asserts itself and says: No. We need not be afraid of those we are different, we can embrace that difference and learn from it." </p>
-          <footer>
-            <cite> G'Kar, The Ragged Edge </cite>
-          </footer>
-        </blockquote>
+        <div class="name">Andrew Lesh</div>
+        <div style="font-size:12px;color:var(--muted)">Software, Hardware, Carware, Skateware, Life Enthuasist</div>
       </div>
-      <div class="primero-pane double" id="profExp">
-        <h2>Professional Experience</h2>
-        <ul class="ul">
-          <li>
-            <h3>DOTNET (.NET) & Azure</h3>
-            <!--div> As part of our standard toolchain, the city of Columbus utilizes a wide range of Azure Technologies to implement business processes throughout the various departments and organizations. ASP.NET Core was at the heart of this work as we have continued to develop our own tools to standardize and expediate our workflow while maintaining user experience. </div-->
-            <ul class="ul">
-              <li>Worked with clients; typically other departments within the city, to develop and modernize many of their applications</li>
-              <li>Translated dozens of legacy Lotus Notes (yes that Lotus Notes), z80 Assembly, and PHP applications into .NET Core equivalents</li>
-              <li>Created and maintained an ASP.NET Core Template for all Web Team members to initiate new projects off of</li>
-              <li>Identified and created RCLs to reduce redundant development of common tasks like frequently-used form components. </li>
-              <li>Utilized Azure DevOps' Pipelines and Artifacts for releasing these RCLs for use and publishing Applications to specified deployment slots. </li>
-            </ul>
-            <!-- details><summary>More</summary></details -->
-          </li>
-          <li>
-            <h3>Evoq & DNN</h3>
-            <p>Most sites within the city are built with Evoq CMS. This allows us to quicklly build custom themes, modules, and Liquid Content to permit authorized users to control their site's content after deployments.</p>
-          </li>
-          <li>
-            <h3>Remote Work</h3>
-            <p>Having worked multiple years from home while supervising multiple remote reports, with only routine in-person department meetings, I am fully confident in my ability to provide satisfactory work regardless of locale. My work with the V community and as an admin for the game SkillWarz also taught me many skills in conversing with many differing cultures and being able to empathasize with their viewpoints.</p>
-          </li>
+      <div class="contact">
+        Columbus, GA<br/>706‑393‑5104 · <a href="mailto:adlesh8@gmail.com">adlesh8@gmail.com</a><br/><a href="https://litenite42.github.io/" style="color:var(--muted);text-decoration:none;">litenite42.github.io</a>
+      </div>
+    </header>
+
+    <main style="grid-column:1 / auto;">
+      <section>
+        <h3>Professional Summary</h3>
+        <div>Experienced software developer and IT professional with a B.S. in Computer Science. Architect and operator of Azure-hosted web applications and services, focused on reliable delivery, improved developer workflows, and delivering measurable operational improvements across full‑stack C#/.NET and JavaScript/TypeScript systems.</div>
+      </section>
+
+      <section>
+        <h3>Key Achievements</h3>
+        <ul>
+          <li>Migrated and modernized production systems to reduce operational latency and improve availability.</li>
+          <li>Built reusable internal libraries and tooling to accelerate development and standardize deployments.</li>
+          <li>Developed intrusion analysis software used in coursework and evaluated for professional deployment.</li>
+          <li>Published in Internet of Things, Volumes 3-4, October 2018</li>
+          <li>Nominated for Who’s Who in American Universities and Colleges, 2015</li>
         </ul>
-        <h2>Relevant Works</h2>
-        <div id="professionalWorks"></div>
-        <div id="personalWorks">
-          <h2>Personal Works</h2>
-          <details id="rwdetails" open>
-            <summary>SWLeaderboard</summary>
-            <aside>
-              <ul>
-                <li>Number of Users: 30-50</li>
-                <li>Length of Support: 2 years</li>
-                <li>End of Support: Heroku ended Free Tier</li>
-              </ul>
-            </aside> An experiment to reverse engineer the leaderboard of an online multiplayer game that I was an admin for at the time. By mimicking the HTTP requests the forum used, players were able to search the scores from within the Community Discord. This was my first time publishing and supporting an application on my own and was quite the experience.
-          </details>
-          <details id="lvdetails">
-            <summary>Learn V in Y Minutes</summary>
-            <aside>
-              <ul>
-                <li>Number of Users: 59 unique user stars </li>
-                <li>Length of Support: 2 years</li>
-                <li>End of Support: Option/Result split in V and interest by another party to start new implementation</li>
-              </ul>
-            </aside> An unofficial tutorial that mimicked, the Learn X In Y Minutes tutorials, that I started while first learning <a href="https://vlang.io">V</a>. I maintained and updated the tutorial for several releases; even aiding others with their own contributions.
-          </details>
+      </section>
+
+      <section>
+        <h3>Key Projects</h3>
+
+        <div class="role">
+          <strong>METRA Parking Violations</strong>
+          <div class="meta">Lotus Notes → Azure Logic Apps; CIVICSmart; nCourt/Catalis</div>
+          <div>Migrated a Lotus Notes citation system into an Azure-centered workflow integrating Duncan CIVICSmart, third-party handhelds, and nCourt/Catalis. Implemented Azure Logic Apps to automate handheld uploads and ticket processing to shorten time-to-payment availability.</div>
         </div>
-      </div>
-    </section>
-  </body>
+
+        <div class="role">
+          <strong>CCG Forms RCL</strong>
+          <div class="meta">ASP.NET Core; Razor templates</div>
+          <div>Authored a reusable ASP.NET Core component package including file upload, date/time picker, icon picker, address/phone/email inputs, and client-side utilities to dynamically generate component lists compatible with Razor templates. Improved consistency and reduced implementation time for internal web forms.</div>
+        </div>
+
+        <div class="role" style="display:none;" >
+          <strong>Muscogee County Sheriff Unit Statistics</strong>
+          <div class="meta">Reporting and metrics platform</div>
+          <div>Delivered a statistics and metrics platform that records deputy activity and generates flexible reports by division, metric category, and date range for command-level decision making.</div>
+        </div>
+
+        <div class="role">
+          <strong>SW Leaderboard <em>*Personal Project*</em></strong>
+          <div class="meta">Discord.js (Node.js) bot; Heroku (previously); reverse engineering; community integration</div>
+          <div>Provided a public view of SkillWarz official leaderboard for the community Discord by reverse engineering leaderboard queries, coordinating with international players, and managing downtime expectations. Previously hosted on Heroku.</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Experience</h3>
+
+        <div class="role">
+          <strong>Programming / Development Coordinator - Cloud-Based Solutions</strong>
+          <div class="meta">Columbus Consolidated Government · Columbus, GA · Jan 2020 – Present</div>
+          <ul>
+            <li>Promoted from Application Developer to Programming / Development Coordinator - Cloud-Based Solutions.</li>
+            <li>Lead planning, development, and support of ASP.NET Core applications and Azure App Services; maintain DNN sites on Azure VMs.</li>
+            <li>Architect and deliver internal tools and documentation to improve release cadence and developer onboarding.</li>
+            <li>Coordinate cross-functional project schedules and technical decisions with leadership.</li>
+            <li>Mentor developers and lead incident response and triage to minimize downtime.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Application Developer</strong>
+          <div class="meta">Columbus Consolidated Government · Jun 2019 – Dec 2019</div>
+          <ul>
+            <li>Implemented and maintained web features and integrations to meet departmental requirements.</li>
+            <li>Scoped and delivered feature work with supervision, focusing on maintainability and operational stability.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>PHP Web Development Intern</strong>
+          <div class="meta">OmegaFi, Inc. · Jan 2019 – Apr 2019</div>
+          <ul>
+            <li>Built a SOC1 audit application centralizing user-permission reviews and authorizations.</li>
+            <li>Increased traceability and efficiency for internal audit processes.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Student Assistant Cybersecurity Lab</strong>
+          <div class="meta">Columbus State University · Nov 2017 – Jul 2018</div>
+          <ul>
+            <li>Created core capture and analysis components for intrusion analysis software.</li>
+            <li>Delivered demos and authored introductory lab coursework for new cybersecurity classes.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <aside class="col-right" aria-label="Side column">
+      <section>
+        <h3 style="margin-top:12px;">Education</h3>
+        <div style="font-size:12px;margin-bottom:6px;"><strong>Columbus State University</strong><br/>B.S. Computer Science, Software Systems; A.S. Engineering Studies · Fall 2013 – Spring 2019<br/><em>Summa Cum Laude</em></div>
+      
+        <h3>Technical Skills</h3>
+        <div class="pill"><strong>Core Technologies</strong> — C#, ASP.NET Core, EF Core, Azure, HTML/CSS/JS, JavaScript / TypeScript, Git, Evoq/DNN</div>
+        <div class="pill"><strong>Frameworks & Tools</strong> — Azure CLI, Node.JS/Deno, SASS, Azure DevOps, Blazor, React, Vue, Razor, ASP.NET MVC, Shopify, WordPress</div>
+        <div class="pill"><strong>Languages</strong> — Python, Go, PHP, Rust, OCaml, C, C++, SmallTalk, LotusScript, Visual BASIC, MATLAB, x86 Assembly, z80 Assembly</div>
+        <div class="pill"><strong>Operating Systems</strong> — Windows, Linux</div>
+
+        <h3 style="margin-top:10px;">Databases & Practices</h3>
+        <div style="font-size:12px;margin-bottom:6px;">Database design and management; clear documentation generation; diagnostic information gathering; collaborative development; strategic problem solving</div>
+
+        <h3 style="margin-top:10px;">AI-Friendly</h3>
+        <div style="font-size:11px;color:var(--muted);">Copilot; ChatGPT — used for productivity, prototyping, and code assistance</div>
+      </section>
+    </aside>
+  </div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
 </html>
